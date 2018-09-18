@@ -20,5 +20,5 @@ RUN curl -Ls https://github.com/ipfs/go-ipfs/releases/download/v${IPFS_VERSION}/
         && tar xf /tmp/ipfs.tar.gz -C /tmp \
         && cd /tmp/go-ipfs && ./install.sh
 
-RUN ipfs version
+RUN ipfs daemon &
 
